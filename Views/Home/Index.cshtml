@@ -1,0 +1,28 @@
+﻿@model Int32;
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<div class="container">
+
+    @if (Model > 10000000)
+
+    {
+
+        <p>You earn too much money</p>
+
+    }
+
+    else
+
+    {
+
+        <p>You should ask for a salary raise</p>
+
+    }
+
+</div>
